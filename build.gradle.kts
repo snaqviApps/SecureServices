@@ -36,9 +36,7 @@ dependencies {
 	//kotlin-provided Logging instead of Lombok
 	implementation("io.github.microutils:kotlin-logging-jvm:2.0.11")
 
-	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.h2database:h2")
-	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")

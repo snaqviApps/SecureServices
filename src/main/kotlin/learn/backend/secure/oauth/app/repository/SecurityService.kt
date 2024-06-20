@@ -1,5 +1,6 @@
 package learn.backend.secure.oauth.app.repository
 
+import mu.KLogging
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Service
 
@@ -9,5 +10,11 @@ class SecurityService {
     @Value("\${message}")
     lateinit var message: String
 
-    fun receiveUserInformation(username: String) = "Customer's introductory remarks: $username, $message"
+    companion object: KLogging()
+
+    fun receiveUserInformation(userName: String) : String {
+
+        logger.info("Name is: $userName")
+        return "Customer's introductory remarks: $userName, $message"
+    }
 }
