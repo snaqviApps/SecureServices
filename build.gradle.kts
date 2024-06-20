@@ -32,6 +32,10 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
 	implementation("org.springframework.boot:spring-boot-starter-web-services")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+
+	//kotlin-provided Logging instead of Lombok
+	implementation("io.github.microutils:kotlin-logging-jvm:2.0.11")
+
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.h2database:h2")
 	annotationProcessor("org.projectlombok:lombok")

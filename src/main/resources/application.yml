@@ -1,20 +1,19 @@
 spring:
-  applicatoin:
+  application:
     name: spring-securities-with-OAuth2.0
 message: Peace from developer-team (default profile)
----
-
-spring:
-  config:
-    activate:
-      on-profile: qa
-message: This is qa profiles
----
-spring:
-  config:
-    activate:
-      on-profile: prod
-message: This is prod profile
+#---
+#spring:
+#  config:
+#    activate:
+#      on-profile: qa
+#message: This is qa profiles
+#---
+#spring:
+#  config:
+#    activate:
+#      on-profile: prod
+#message: This is prod profile
 
 
 
