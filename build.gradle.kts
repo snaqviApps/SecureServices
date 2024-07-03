@@ -33,10 +33,14 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web-services")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
-	//kotlin-provided Logging instead of Lombok
-	implementation("io.github.microutils:kotlin-logging-jvm:2.0.11")
+//	compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.29'
+//	implementation("org.slf4j:slf4j-api:1.7.30")
+	implementation("io.github.oshai:kotlin-logging-jvm:5.1.0")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
 
+	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.h2database:h2")
+	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")

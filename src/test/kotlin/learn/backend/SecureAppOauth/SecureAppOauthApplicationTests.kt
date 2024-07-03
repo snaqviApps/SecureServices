@@ -1,4 +1,4 @@
-package learn.backend.secureAppOauth
+package learn.backend.SecureAppOauth
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
