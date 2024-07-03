@@ -12,7 +12,7 @@ class ImageryService {
     fun getImage(imageId: String): ByteArray? {
         if(imageId.toInt() > 0) {
             javaClass.getResourceAsStream(
-                "/images/IMG_0847.jpg")?.let {
+                "/images/morning.jpg")?.let {
                 inStreamImage = it
             }
         }
