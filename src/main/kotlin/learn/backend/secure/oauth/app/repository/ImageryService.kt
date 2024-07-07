@@ -1,6 +1,5 @@
 package learn.backend.secure.oauth.app.repository
 
-import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Service
 import java.io.InputStream
 
